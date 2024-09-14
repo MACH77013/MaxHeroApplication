@@ -1,0 +1,18 @@
+package com.example.heroesapp.models
+data class Heroe(val id : Int, val nombre : String, val img : String, val desc : String, val publicadorId : Int){
+
+    companion object{
+        val heroes = mutableListOf<Heroe>(
+            Heroe(1, "Ghost Rider", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1SGapdavV6zP8vFDAq0k-VBk55SMBClwlnw&s", "Un motorista vengador poseído por un espíritu de fuego que castiga a los criminales con su implacable justicia. Su identidad más conocida es Johnny Blaze, un stuntman convertido en vigilante infernal.", 1),
+            Heroe(2, "SpiderMan", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk4yc5dqAkZf6X-cohimV1lVJagnOn1d5kBQ&s", "Un adolescente llamado Peter Parker que obtiene superpoderes tras ser mordido por una araña radiactiva. Con habilidades de trepar paredes y lanzar telarañas, lucha contra el crimen en Nueva York mientras lidia con la vida cotidiana.", 1),
+            Heroe(3, "Moon Knight", "https://styles.redditmedia.com/t5_4zk1ec/styles/communityIcon_jnlnsz5if5l71.png", "Marc Spector, un ex marine y mercenario que, tras ser casi asesinado, se convierte en el anfitrión del dios egipcio Khonshu. Sufre de trastorno de identidad disociativo y lucha contra el crimen con una serie de identidades distintas.", 1),
+            Heroe(4, "Dr. Strange", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFC9HhAUIUk0mDhkrNhZsdsF6UuK7loiO5NQ&s", "Stephen Strange, un neurocirujano que se convierte en el Hechicero Supremo después de un accidente de automóvil que destruye sus manos. Utiliza magia y conocimientos arcanos para proteger el universo de amenazas místicas.", 1),
+            Heroe(5, "Groot", "https://64.media.tumblr.com/de41654f36901ead0e1badcc67aa3d47/tumblr_przng4ZrVd1tx3jbk_400.jpg", "Un ser alienígena de la especie Flora colossus, con la capacidad de regenerarse y controlar su cuerpo vegetal. Es conocido por su lema \"Yo soy Groot\" y su estrecha amistad con Rocket Raccoon.", 1),
+            Heroe(6, "Flash", "https://pbs.twimg.com/profile_images/593434324604596225/bgpR0pt1_400x400.jpg", "Barry Allen, un forense que obtiene supervelocidad después de un accidente con productos químicos y un rayo. Usa sus habilidades para luchar contra el crimen y viajar en el tiempo.", 2),
+            Heroe(7, "Batman", "https://img.stablecog.com/insecure/256w/aHR0cHM6Ly9iLnN0YWJsZWNvZy5jb20vOTYxMWRlNGQtNmYzNy00NGVlLTg5ODQtOTY0MzU5OGMxMmU2LmpwZWc.webp", "Bruce Wayne, un millonario de Gotham City que, tras la muerte de sus padres, se convierte en el Caballero Oscuro. Usa tecnología avanzada y habilidades de combate para combatir el crimen sin superpoderes.", 2),
+            Heroe(8, "Super Man", "https://images.stockcake.com/public/0/9/c/09ca7e4a-d8d5-464a-8c47-fb9c719c2c6c_medium/crying-superman-child-stockcake.jpg", "Clark Kent, un extraterrestre del planeta Krypton con poderes sobrehumanos, como vuelo, superfuerza y visión de calor. Defiende la justicia y la verdad como el héroe más poderoso de la Tierra.", 2),
+            Heroe(9, "Night Wing", "https://crushon.ai/_next/image?url=https%3A%2F%2Fcdn.crushon.ai%2Fimages%2Fe8a86316-eaed-11ee-a449-cad90b56d298%2F23c48912-3366-4fbf-bca9-fb624c54db1e&w=256&q=75", "Dick Grayson, el primer Robin y antiguo protegido de Batman, que se convierte en su propio héroe, Nightwing. Es un experto en artes marciales y acrobacias, y trabaja para proteger Blüdhaven.", 2),
+            Heroe(10, "Aquaman", "https://cdn.openart.ai/published/OUnaezf2ExxbC5tJf96c/LW6YcdBW_DB8O_256.webp", "Arthur Curry, el rey de Atlantis con la habilidad de respirar bajo el agua y comunicarse con la vida marina. Defiende el océano y sus habitantes mientras maneja su papel en el mundo subacuático y en la superficie.", 2)
+        )
+    }
+}

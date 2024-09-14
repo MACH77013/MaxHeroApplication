@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HeroesApp</string>
+    <string name="correo">correo</string>
+    <string name="contrase_a">contraseña</string>
+    <string name="login">iniciar sesión</string>
+    <string name="nombre_publicante">Nombre Publicante</string>
+</resources>
