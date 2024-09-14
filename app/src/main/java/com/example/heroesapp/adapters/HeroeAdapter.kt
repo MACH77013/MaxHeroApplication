@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.heroesapp.R
 import com.example.heroesapp.models.Heroe
-import com.squareup.picasso.Picasso
+//import com.squareup.picasso.Picasso
 
 class HeroAdapter(val heroes : List<Heroe>)
     : RecyclerView.Adapter<HeroViewHolder>()
@@ -29,7 +29,7 @@ class HeroAdapter(val heroes : List<Heroe>)
 
         val heroe = heroes[position]
         holder.heroeName.text = heroe.nombre
-        Picasso.get().load(heroe.img).into(holder.heroeImage)
+        //Picasso.get().load(heroe.img).into(holder.heroeImage)
 
     }
 
