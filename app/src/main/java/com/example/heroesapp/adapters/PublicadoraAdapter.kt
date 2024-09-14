@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.heroesapp.R
 import com.example.heroesapp.models.Publicadora
-//import com.squareup.picasso.Picasso
+import com.squareup.picasso.Picasso
 
 class PublisherAdapter(val publicantes : List<Publicadora>, val onClick:(Publicadora)->Unit)
     : RecyclerView.Adapter<PublisherViewHolder>()
@@ -30,7 +30,7 @@ class PublisherAdapter(val publicantes : List<Publicadora>, val onClick:(Publica
     override fun onBindViewHolder(holder: PublisherViewHolder, position: Int) {
         val publicante = publicantes[position]
         holder.nombrePublicante.text = publicante.nombre
-        //Picasso.get().load(publicante.img).into(holder.publicanteImage)
+        Picasso.get().load(publicante.img).into(holder.publicanteImage)
 
         holder.publicanteImage.setOnClickListener{
             onClick(publicante)
